@@ -5,3 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+import "firebase/auth"
+import React from "react"
+import { Form, Button, Card, Alert } from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AuthProvider from './src/contexts/AuthContext'
+
+export const wrapRootElement =({element}) => {
+    <AuthProvider>{element} </AuthProvider>
+}
