@@ -17,11 +17,10 @@ function App() {
      
          
     <Router >
-  
-          <Blog path="/" default />
+
           
           <Signup path="/signup"  />
-          <Login path="/login"  />
+          <Login path="/login" default  />
           
  
     </Router>
